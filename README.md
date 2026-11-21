@@ -47,19 +47,3 @@ Ordre : API d'abord, puis client (`VITE_API_URL` est figée au build), puis mett
 | API | `PROJECT_DIR` | `api` |
 | Client | `VITE_API_URL` | URL publique de l'API |
 | Client | `PROJECT_DIR` | `client` |
-
-## Coût mensuel
-
-- Estimé : _à remplir (simulateur Scalingo)_
-- Réel : _à remplir (Billing)_
-
-## En cas de panne
-
-_À compléter avec les commandes réellement testées :_
-
-```bash
-scalingo --app <app-api> logs --lines 200
-scalingo --app <app-api> deployments
-scalingo --app <app-api> deployment-rollback   # à tester
-scalingo --app <app-api> backups               # sauvegarde / restauration à tester
-```
