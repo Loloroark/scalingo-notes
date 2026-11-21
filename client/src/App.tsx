@@ -14,8 +14,8 @@ export default function App() {
       const res = await fetch(`${API}/notes`);
       setNotes(await res.json());
       setError("");
-    } catch {
-      setError(`API injoignable : ${API}/notes`);
+      } catch (e) {
+      setError(`${API}/notes : ${String(e)}`);
     }
   };
 
