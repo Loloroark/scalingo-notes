@@ -15,7 +15,7 @@ export default function App() {
       setNotes(await res.json());
       setError("");
     } catch {
-      setError("API injoignable");
+      setError(`API injoignable : ${API}/notes`);
     }
   };
 
